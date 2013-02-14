@@ -1,0 +1,15 @@
+<H1>Liste des utilisateurs
+	<table>
+		<tr>
+			<th>Nom</th>
+			<th>Email</th>
+		</tr>
+		<% @utlisateurs.each do |utilisateur| %>
+			<tr>
+				<td><%= utilisateur.nom%></td>
+				<td><%= utilisateur.email%></td>
+				<td><%= link_to 'Montrer', utilisateur%></td>
+			</tr>
+		
+		<% end %>
+	</table>
